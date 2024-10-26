@@ -10,7 +10,7 @@ import (
 
 var DB *sql.DB
 func Connect() {
-    dsn := "root:@Meimei52Hz_Arya@@tcp(localhost:3306)/todo_app"
+    dsn := ""
     var err error
     DB, err = sql.Open("mysql", dsn)
     if err != nil {
